@@ -1,3 +1,6 @@
-nom = gets
+puts "Entrez le chiffre"
 
-  puts "Salut  #{nom}"
+
+chiffre = gets.chomp.to_i
+
+puts chiffre.even?
