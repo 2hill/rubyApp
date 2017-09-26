@@ -1,12 +1,9 @@
-puts 'Entrez le chiffre'
+puts 'Entrez un mot'
 
-chiffre = gets.chomp.to_i
-adeviner = 12
+mot = gets.chomp.downcase
 
-if chiffre > adeviner
-  puts "#{chiffre} est trop grand"
-elsif chiffre < adeviner
-  puts "#{chiffre} est trop petit"
-else chiffre == adeviner
-     puts 'Bravo!'
-  end
+if mot.reverse == mot
+  puts "palyndrome!"
+else
+  puts " non palyndrome"
+end
