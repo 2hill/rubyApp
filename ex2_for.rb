@@ -13,4 +13,3 @@ for num in 1..3
 end
 
 puts 'Bravo' if a == adeviner
-puts 'Perdu' if num > 3
