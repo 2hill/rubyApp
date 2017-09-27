@@ -3,7 +3,7 @@ puts 'Entrez un mot'
 mot = gets.chomp.downcase
 
 if mot.reverse == mot
-  puts "palyndrome!"
+  puts 'palyndrome!'
 else
-  puts " non palyndrome"
+  puts ' non palyndrome'
 end
