@@ -15,14 +15,13 @@ students = [
 ]
 
 def aboveAvg(students)
-
-students.each do |student|
+  students.each do |student|
    if student[:mark] >= 10
       yield(student)
     end
    end
   end
 
-aboveAvg (students)do |student|
-  puts "#{student[:name]} has an above average mark"
-end
+  whoIsAboveAvg = Proc.new { |student| puts "#{student[:name]} has an above average mark"}
+
+aboveAvg students, &whoIsAboveAvg
