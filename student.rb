@@ -1,5 +1,5 @@
 class Student
-   def initialize(name, age)
+   def initialize(name, age) # constructeur
       @name = name
       @age = age
    end
