@@ -9,7 +9,4 @@ else
   puts "unknown command"
 end
 
-
-#ternary
-
 puts a < b ? " a is inferior to be" : " a is superior or equal to b"
